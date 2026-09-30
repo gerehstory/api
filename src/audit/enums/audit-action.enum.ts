@@ -1,0 +1,16 @@
+export enum AuditAction {
+  CompetitionCreated = 'competition.created',
+  CompetitionUpdated = 'competition.updated',
+  CompetitionPublished = 'competition.published',
+  JudgeAssigned = 'judge.assigned',
+  JudgeRemoved = 'judge.removed',
+  JudgeUpdated = 'judge.updated',
+  CriterionCreated = 'criterion.created',
+  CriterionUpdated = 'criterion.updated',
+  CriterionRemoved = 'criterion.removed',
+  EntrySubmitted = 'entry.submitted',
+  FirstRoundVoteSubmitted = 'first_round.vote_submitted',
+  SecondRoundEvaluationSubmitted = 'second_round.evaluation_submitted',
+  TieBreakEvaluationSubmitted = 'tie_break.evaluation_submitted',
+  CompetitionStatusChanged = 'competition.status_changed',
+}
