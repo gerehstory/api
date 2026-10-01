@@ -13,7 +13,7 @@ async function bootstrap() {
     }),
   );
   app.enableCors({
-    origin: '*',
+    origin: ['https://web-sable-phi-26.vercel.app', 'http://localhost:3000'],
   });
 
   const config = new DocumentBuilder()
