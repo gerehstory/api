@@ -18,7 +18,7 @@ export class Otp {
   @ManyToOne(() => User, (user) => user.id)
   user: User;
 
-  @Column({ type: 'datetime' })
+  @Column({ type: 'timestamp' })
   expiresAt: Date;
 
   @CreateDateColumn()

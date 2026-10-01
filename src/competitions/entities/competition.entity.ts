@@ -36,7 +36,7 @@ export class Competition {
   })
   status: CompetitionStatus;
 
-  @Column({ type: 'datetime' })
+  @Column({ type: 'timestamp' })
   applicationDeadline: Date;
 
   @Column({ type: 'int' })
@@ -54,31 +54,31 @@ export class Competition {
   @ManyToOne(() => User, { eager: true })
   createdBy: User;
 
-  @Column({ type: 'datetime', nullable: true })
+  @Column({ type: 'timestamp', nullable: true })
   publishedAt: Date | null;
 
-  @Column({ type: 'datetime', nullable: true })
+  @Column({ type: 'timestamp', nullable: true })
   firstRoundStartedAt: Date | null;
 
-  @Column({ type: 'datetime', nullable: true })
+  @Column({ type: 'timestamp', nullable: true })
   firstRoundCompletedAt: Date | null;
 
-  @Column({ type: 'datetime', nullable: true })
+  @Column({ type: 'timestamp', nullable: true })
   secondRoundStartedAt: Date | null;
 
-  @Column({ type: 'datetime', nullable: true })
+  @Column({ type: 'timestamp', nullable: true })
   secondRoundCompletedAt: Date | null;
 
-  @Column({ type: 'datetime', nullable: true })
+  @Column({ type: 'timestamp', nullable: true })
   tieBreakStartedAt: Date | null;
 
-  @Column({ type: 'datetime', nullable: true })
+  @Column({ type: 'timestamp', nullable: true })
   tieBreakCompletedAt: Date | null;
 
-  @Column({ type: 'datetime', nullable: true })
+  @Column({ type: 'timestamp', nullable: true })
   completedAt: Date | null;
 
-  @Column({ type: 'datetime', nullable: true })
+  @Column({ type: 'timestamp', nullable: true })
   cancelledAt: Date | null;
 
   @ManyToMany(() => StoryType)

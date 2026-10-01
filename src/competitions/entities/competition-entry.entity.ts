@@ -37,7 +37,7 @@ export class CompetitionEntry {
   @Column({ type: 'text' })
   content: string;
 
-  @Column({ type: 'datetime' })
+  @Column({ type: 'timestamp' })
   submittedAt: Date;
 
   @Column({ default: false })
