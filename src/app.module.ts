@@ -1,4 +1,3 @@
-import { dirname, join } from 'path';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
@@ -35,7 +34,8 @@ import { CompetitionsModule } from './competitions/competitions.module';
         },
 
         autoLoadEntities: true,
-        synchronize: true,
+        synchronize: false,
+        migrationsRun: true,
       }),
     }),
     UsersModule,
